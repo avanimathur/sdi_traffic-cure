@@ -54,9 +54,9 @@ const Map = () => {
 
       {showRoutes && (
         <div className="map-images">
-          <img src="/mapOption1.jpg" alt="Alternative Route 1" />
-          <img src="/mapOption2.jpg" alt="Alternative Route 2" />
-          <img src="/mapOption3.jpg" alt="Alternative Route 3" />
+          <img src="mapOption1.jpg" alt="Alternative Route 1" />
+          <img src="mapOption2.jpg" alt="Alternative Route 2" />
+          <img src="mapOption3.jpg" alt="Alternative Route 3" />
         </div>
       )}
     </div>
