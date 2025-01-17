@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(185, 227, 241);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* Main Container */
+  .rewards-container {
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #007bff;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Reward Button */
+  .reward-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reward-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Displaying the Reward */
+  .reward-display {
+    font-size: 24px;
+    color: #007bff;
+    margin-top: 20px;
+  }
+  
+  /* Spin the Wheel */
+  .spin-wheel-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .spin-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .spin-button:hover {
+    background-color: #e0a800;
+  }
+  
+  .spin-wheel {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .spin-wheel-gif {
+    width: 200px;
+    height: 200px;
+    display: none; 
+  }
+  
+  /* Celebration Animation (🎉) */
+  .celebration-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px; 
+    opacity: 1;
+    animation: fadeOut 4s forwards; 
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1); 
+    }
+    50% {
+      opacity: 0.5;
+      transform: translate(-50%, -50%) scale(1.2); 
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+  }  
